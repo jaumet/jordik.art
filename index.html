@@ -7,7 +7,6 @@
 
 <!-- Reference to html5gallery.js -->
 <script type="text/javascript" src="./js/html5gallery.js"></script>
-
 </head>
 
 <body>
@@ -95,6 +94,20 @@ div.guide p {color:#000000; font:14px Arial, Helvetica, sans-serif;}
 div.guide pre {color:#990000;}
 div.guide p.title {color:#df501f; font:18px Arial, Helvetica, sans-serif;}
 </style>
+<script>
+//Add this to you script
+function run(){
+    var password = prompt("Password Please");
+    //Change to your own Password
+    if(password != 'nualart'){
+        document.body.innerHTML = '';
+        document.body.innerHTML = 'Password Failed! Reload to Renter Password';
+    //}else{
+    //    alert('Success');
+    }
+}
+run();
+</script>
 
 </body>
 
